@@ -4,7 +4,7 @@ public class Classroom {
 	private Person[] students;
 	private Person teacher;
 	
-	public Classroom(Person teacher, Person[] students) {
+	public Classroom(Person[] students, Person teacher) {
 		this.students=students;
 		this.teacher=teacher;
 	}
@@ -27,7 +27,7 @@ public class Classroom {
 
 	@Override
 	public String toString() {
-		return "Classroom [students=" + Arrays.getgPA + ", teacher=" + teacher + "]";
+		return "Classroom [students=" + Arrays.getgPA + ", teacher=" + teacher + teacher."]";
 	}
 
 }
