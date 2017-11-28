@@ -1,5 +1,5 @@
 import java.util.Arrays;
-
+import java.util.Random;
 public class Classroom {
 	private Person[] students;
 	private Person teacher;
@@ -24,10 +24,17 @@ public class Classroom {
 	public void setTeacher(Person teacher) {
 		this.teacher = teacher;
 	}
-
+	
+	public Student randomStudent () {
+		Random rand = new Random ();
+		String() = rand.nextString();
+		
+			
+	}
+	//public static void printClass (Classroom[])
 	@Override
 	public String toString() {
-		return "Classroom [students=" + Arrays.getgPA + ", teacher=" + teacher + teacher."]";
+		return ;
 	}
 
 }
