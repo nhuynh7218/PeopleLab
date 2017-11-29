@@ -28,12 +28,12 @@ public class Runner {
 		}
 	
 	public static void main(String[] args) {
-		Person teacher= new Teacher();
+		Person teacher= new Teacher(0, null, null, null, null, 0);
 		Person[] students = new Person[34];
 		for (int i=0; i<34; i++)	{
 			
 		}
-		
+		System.out.println(Class);
 		
 	}
 
