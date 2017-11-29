@@ -29,15 +29,27 @@ public class Classroom {
 		double totalGPA = 0.0;
 		for (Person p : this.students)	{
 			if (p instanceof Student) {
-				totalGPA += (Student)p.getGPA;
+				totalGPA += ((Student)p).getGPA();
 			}
 		}
 		return totalGPA/this.students.length;	
 	}
-	//public static void printClass (Classroom[])
-	@Override
-	public String toString() {
-		return ;
+	
+	public String getSubject()	{
+		if (this.teacher instanceof Teacher) {
+			return ((Teacher)(this.teacher)).getSubject();
+		}
+		return null;
 	}
-
+	
+	
+	public String printClass()	{
+		String allStudents = "";
+		for (Person p : this.students)	{
+			if (p instanceof Student) {
+			allStudents= allStudents + ((Student)p).getFamilyName() + ((Student)p).getFirstName();
+			}	
+		}
+		return getTeacher() + this.getSubject() + allStudents;
+	}
 }
