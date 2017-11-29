@@ -25,11 +25,14 @@ public class Classroom {
 		this.teacher = teacher;
 	}
 	
-	public Student randomStudent () {
-		Random rand = new Random ();
-		String() = rand.nextString();
-		
-			
+	public double classAverage()	{
+		double totalGPA = 0.0;
+		for (Person p : this.students)	{
+			if (p instanceof Student) {
+				totalGPA += (Student)p.getGPA;
+			}
+		}
+		return totalGPA/this.students.length;	
 	}
 	//public static void printClass (Classroom[])
 	@Override
