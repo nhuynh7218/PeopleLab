@@ -45,9 +45,9 @@ public class Classroom {
 		String allStudents = "";
 		for (Person p : this.students)	{
 			if (p instanceof Student) {
-			allStudents= allStudents + ((Student)p).getFamilyName() + ((Student)p).getFirstName();
+			allStudents= allStudents + ("\n"+((Student)p).getFirstName() + " " + ((Student)p).getFamilyName() + ",  ");
 			}	
 		}
-		return getTeacher() + this.getSubject() + allStudents;
+		return  getTeacher() + "  teaches " + this.getSubject() + "  to  " + allStudents;
 	}
 }

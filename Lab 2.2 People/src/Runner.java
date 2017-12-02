@@ -8,10 +8,16 @@ public class Runner {
 			"Antonio", "Matthew", "Lance", "Casey", "Toby", "Lorena", "Israel", "Patsy", "Alexander", "Ignacio",
 			"Marrio", "Luigi", "Warrio", "Waluigi", "Bowser", "Peach", "Daisy", "Yoshi", "Link", "Zelda"};
 	
-	private static String[] familyNames = {"Bob"};
-	private static String[] majors = {"Physics"};
-	private static String[] clubs = {"Bouldering"};
-	private static String[] titles = {"Mr", "Mrs", "Ms", "Mx"};
+	private static String[] familyNames = {"Bob", "Huang", "Chen", "Chan", "Cox", "Brooks", "Anderson", "Figueroa", "George", "Henry",
+			"Wood", "Cobb", "Riley", "Einsten", "Harvey", "Faraday", "Lenz", "Newton", "Bowen", "Boeing",
+			"Williamson", "Pearson", "Andrews", "Isaija", "Mitul", "Nilda", "Roan", "Alcyone", "Sara", "Flintstone"};
+	
+	private static String[] majors = {"Physics", "Math", "Law and Society", "Electrical Engineering", "Mechanical Engineering",
+			"Finance", "Social Science and Research", "Civil Engineering", "Industrial Design", "Software Engineering",
+			"College Prep", "Chemical Engineering", "Bioscience", "Architecture", "Aerospace Engineering", "Gateway", "Media"};
+	
+	private static String[] clubs = {"Bouldering", "Breakdancing", "Ultimate Frisbee", "Lady Dragons", "Organized Chaos",
+			"DCH", "Swimming", "Lion Dancing", "Key Club", "Astronomy"};
 	
 	
 	public static Student randomStudent()	{
@@ -34,23 +40,20 @@ public class Runner {
 		
 		Person teacher = new Teacher(64, "Nathan", "Levin", "Java", "Mr", 140);
 		
+		
 		Person[] studentsArr;
 		studentsArr = new Person[34];
-		for (int i=0; i<studentsArr.length; i++)	{
-			studentsArr[i]= randomStudent();
+		
+		for (int i=0; i<studentsArr.length;i++)	{
+			studentsArr[i]= randomStudent();	
 		}
 		
 		Classroom classroom1 = new Classroom(studentsArr, teacher);
-		Classroom s = classroom1;
 		
+		System.out.println(classroom1.printClass());
 		System.out.println(classroom1.classAverage());
 		
-		System.out.println(classroom1);
 		
-		
-			
-		
-	
 		
 	}
 
