@@ -1,6 +1,6 @@
 import java.util.Random;
 public class Runner {
-	
+	//pre-made list of variables of a Student
 	private static String[] firstNames = {"Simon", "Cassandra", "Bobby", "Martha", "Lindsie", "Jamie", "Hubert", "Mack", "Damon", "Kristen", 
 			"Doug", "Nathan", "Moses", "Lauren", "Jessie", "Kate", "Nick", "Eric", "Erim", "Ethan", 
 			"Sunny", "Timothy", "William", "Christy", "Susie", "Becky", "Anne", "Vivian", "Emily", "Kelly",
@@ -19,7 +19,8 @@ public class Runner {
 	private static String[] clubs = {"Bouldering", "Breakdancing", "Ultimate Frisbee", "Lady Dragons", "Organized Chaos",
 			"DCH", "Swimming", "Lion Dancing", "Key Club", "Astronomy"};
 	
-	
+	//creating a method that generates a new randomStudent using the fields above
+	 
 	public static Student randomStudent()	{
 		Random rand = new Random(); 
 		
@@ -35,6 +36,12 @@ public class Runner {
 		
 		}
 	
+	/*initialize an array of students, a teacher, so that you can initialize a random classroom.
+	 * Create an empty array and use a for-loop to make any desired amount of students.  
+	 * Then store each created student into the array.
+	 * Create a new classroom by using the random array of students and the teacher and referring it as a Classroom data type.
+	 * Print the class and average by calling to the Classroom class.
+	  */
 	public static void main(String[] args) {
 		
 		

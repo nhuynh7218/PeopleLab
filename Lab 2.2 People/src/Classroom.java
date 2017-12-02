@@ -1,3 +1,6 @@
+//an object consisted of other objects. Objects: array of students and a teacher
+//must create this array of students with a random method
+
 public class Classroom {
 	private Person[] students;
 	private Person teacher;
@@ -23,6 +26,8 @@ public class Classroom {
 		this.teacher = teacher;
 	}
 	
+	//the total average of all the students divided by the number of students
+	//will run into error. Make sure to cast each object in the array as a Student in order to call getGPA method
 	public double classAverage()	{
 		double totalGPA = 0.0;
 		for (Person p : this.students)	{
@@ -33,6 +38,7 @@ public class Classroom {
 		return totalGPA/this.students.length;	
 	}
 	
+	//similar to classAverage in that must cast the Person as a Teacher in order to call getSubject method.
 	public String getSubject()	{
 		if (this.teacher instanceof Teacher) {
 			return ((Teacher)(this.teacher)).getSubject();
@@ -40,7 +46,9 @@ public class Classroom {
 		return null;
 	}
 	
-	
+	/*just like in classAverage, you must cast the objects in the students array as a student. Therefore, 
+	 * you can call the specific methods of a student.
+	*/
 	public String printClass()	{
 		String allStudents = "";
 		for (Person p : this.students)	{

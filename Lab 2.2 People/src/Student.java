@@ -1,13 +1,13 @@
 
 public class Student extends Person{
-	
+	//additional fields along with Person fields
 	private double GPA;
 	
 	private String major;
 	
 	private String clubs;
 	
-	
+	//constructor that creates the Object Studen
 	public Student(int height, String firstName, String familyName, String major, String clubs, double weight, double GPA) {
 		
 		super(height, firstName, familyName, weight);
@@ -17,7 +17,7 @@ public class Student extends Person{
 		
 	}
 
-
+//getters and setters
 	public double getGPA() {
 		return GPA;
 	}
@@ -47,10 +47,10 @@ public class Student extends Person{
 		this.clubs = clubs;
 	}
 	
+	//info on what a Student is
 		@Override
 	public String toString() {
-		return getFamilyName() + ", " + getFirstName() + "   "/*+ "," + getGPA() + "," + getMajor()
-		+ "," + getClubs()*/;
+		return getFamilyName() + ", " + getFirstName();
 	}
 
 }
