@@ -1,5 +1,3 @@
-import java.util.Arrays;
-import java.util.Random;
 public class Classroom {
 	private Person[] students;
 	private Person teacher;

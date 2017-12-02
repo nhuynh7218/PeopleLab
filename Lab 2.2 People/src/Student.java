@@ -49,7 +49,8 @@ public class Student extends Person{
 	
 		@Override
 	public String toString() {
-		return getFamilyName() + ", " + getFirstName();
+		return getFamilyName() + ", " + getFirstName() + "   "/*+ "," + getGPA() + "," + getMajor()
+		+ "," + getClubs()*/;
 	}
 
 }
