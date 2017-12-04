@@ -1,3 +1,5 @@
+//Authors: Simon Huang and Nicholas Huynh
+//d=date Finished: 12/3/17
 import java.util.Random;
 public class Runner {
 	//pre-made list of variables of a Student
